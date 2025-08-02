@@ -40,7 +40,7 @@ const eventsWithContent = await Promise.all(
       <li>
           <article class="album-card">
             <figure class="album-cover">
-              <img src={`/src/assets/albums/${album.slug}/cover.jpg`}/>
+              <img src={`/albums/${album.slug}/cover.jpg`}/>
             </figure>
             <h3 class="album-title">{album.data.title}</h3>
             <time class="album-date">{(album.data.release.getFullYear())}</time>
@@ -58,17 +58,17 @@ const eventsWithContent = await Promise.all(
               <ul class="album-links">
                 <li>
                   <a href="#">
-                    <img src="/src/assets/img/bandcamp.svg" alt="Bandcamp"/>
+                    <img src="/img/bandcamp.svg" alt="Bandcamp"/>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/src/assets/img/spotify.svg" alt="Spotify"/>
+                    <img src="/img/spotify.svg" alt="Spotify"/>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/src/assets/img/applemusic.svg" alt="Apple Music"/>
+                    <img src="/img/applemusic.svg" alt="Apple Music"/>
                   </a>
                 </li>
               </ul>
@@ -107,7 +107,7 @@ const eventsWithContent = await Promise.all(
     <ul class="bios">
     {biosWithContent.map((bio) => (
       <article class='bio-card'>
-          <img src={`/src/assets/bios/${bio.slug}.jpg`}/>
+          <img src={`/bios/${bio.slug}.jpg`}/>
           <h3 class="bio-name">{bio.data.name}</h2>
           <p class="bio-position">{bio.data.position}</p>
           <details class="bio-expand">
