@@ -53,24 +53,22 @@ const { pathname } = Astro.url;
 </header>
 
 <script>
-  const hamburger = document.getElementById('hamburger');
+  const hamburger = document.getElementById('hamburger') as HTMLButtonElement;
    const mobileNavClose = document.getElementById('mobile-nav-close');
- const mobileNav = document.getElementById('mobile-nav');
-  hamburger?.addEventListener("click", () => {
-    mobileNav?.showModal();
+ const mobileNav = document.getElementById('mobile-nav') as HTMLDialogElement;
+  hamburger.addEventListener("click", () => {
+    mobileNav.showModal();
   });
   mobileNavClose?.addEventListener("click", () => {
-    mobileNav?.close();
+    mobileNav.close();
   });
 
-const mediaQuery = window.matchMedia('(min-width: 768px)');
+  const mediaQuery = window.matchMedia('(min-width: 768px)');
+  mediaQuery.addEventListener('change', (e) => {
+    if (e.matches && mobileNav.open) {
+      mobileNav.close();
+      document.getElementById('book-button')?.focus();
+    }
+  });
 
-function handleBreakpointChange(e) {
-  if (e.matches && mobileNav?.open) {
-    mobileNav?.close();
-    document.getElementById('book-button')?.focus();
-  }
-}
-
-mediaQuery.addEventListener('change', handleBreakpointChange);
 </script>
