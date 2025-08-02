@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to main branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.CHRIS_TOKEN }}
           publish_dir: ./dist
           publish_branch: main
           force_orphan: true
