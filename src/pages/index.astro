@@ -24,6 +24,7 @@ const eventsWithContent = await Promise.all(
   })
 );
 
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -35,19 +36,19 @@ const eventsWithContent = await Promise.all(
     <ul class="albums">
     {albums
       .sort((a, b) => b.data.release.getTime() - a.data.release.getTime())
-      .map((post, index) => (
+      .map((album, index) => (
       <li>
           <article class="album-card">
             <figure class="album-cover">
-              <img src={`/src/assets/albums/${post.slug}/cover.jpg`}/>
+              <img src={`/src/assets/albums/${album.slug}/cover.jpg`}/>
             </figure>
-            <h3 class="album-title">{post.data.title}</h3>
-            <time class="album-date">{(post.data.release.getFullYear())}</time>
+            <h3 class="album-title">{album.data.title}</h3>
+            <time class="album-date">{(album.data.release.getFullYear())}</time>
             <div class="button-bar">
               <details {...(index === 0 ? { open: true } : {})} class="tracklist-expand">
                 <summary>Tracklist</summary>
                 <ul class="tracklist">
-                  {post.data.tracklist.map((track: { title: string; duration: string }, index: number) => (
+                  {album.data.tracklist.map((track: { title: string; duration: string }, index: number) => (
                     <li>
                       <h4>{track.title}</h4><time>{track.duration}</time>
                     </li>
@@ -102,6 +103,22 @@ const eventsWithContent = await Promise.all(
     ))}
     </ul>
   </Section> 
+  <Section title="About" id="about">
+    <ul class="events">
+    {biosWithContent.map((bio) => (
+      <article class='bio-card'>
+          <img src={`/src/assets/bios/${bio.slug}.jpg`}/>
+          <h3 class="bio-name">{bio.data.name}</h2>
+          <p class="bio-position">{bio.data.position}</p>
+          <details>
+            <summary>Read more</summary>
+            <bio.Content />
+          </details>
+      </article>
+    ))}
+    </ul>
+
+  </Section>
 	<!-- <ul class="posts-list">
     {biosWithContent.map(({ id, slug, data, Content }) => (
   <article>
