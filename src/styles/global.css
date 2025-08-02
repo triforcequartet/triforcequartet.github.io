@@ -392,7 +392,6 @@ h2 {
 }
 
 .event-card {
-    grid-column: 1 / -1;
     border: .125rem solid black;
     padding: 1rem 1rem 0;
     margin-top: 2rem;
@@ -461,4 +460,57 @@ h2 {
     width: fit-content;
     align-self: end;
     margin: 1rem 0 -1.0675rem;
+}
+
+
+/* BIOS */
+
+.bios {
+    grid-column: 1 / -1;
+}
+
+.bio-card {
+    border: .125rem solid black;
+    padding: 1rem 1rem 0;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+
+.bio-name {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.bio-position {
+    font-size: .625rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.bio-expand summary {
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    color: white;
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: 1rem auto -1.0625rem;
+}
+
+.bio-content {
+    margin-top: 2rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.bio-content p {
+    margin-top: .625rem
 }

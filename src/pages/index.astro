@@ -104,15 +104,17 @@ const eventsWithContent = await Promise.all(
     </ul>
   </Section> 
   <Section title="About" id="about">
-    <ul class="events">
+    <ul class="bios">
     {biosWithContent.map((bio) => (
       <article class='bio-card'>
           <img src={`/src/assets/bios/${bio.slug}.jpg`}/>
           <h3 class="bio-name">{bio.data.name}</h2>
           <p class="bio-position">{bio.data.position}</p>
-          <details>
-            <summary>Read more</summary>
-            <bio.Content />
+          <details class="bio-expand">
+            <summary>Read bio</summary>
+            <div class="bio-content">
+              <bio.Content />
+            </div>
           </details>
       </article>
     ))}
