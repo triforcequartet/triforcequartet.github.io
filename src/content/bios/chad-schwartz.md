@@ -1,0 +1,11 @@
+---
+name: "Chad Schwartz"
+position: "Cello, Arranger, and Founder"
+type: "bio"
+---
+
+Chad Schwartz began his musical career by taking piano classes starting at age three and then beginning cello lessons at age nine. He quickly developed a love for chamber music and joined a quartet coached by Helen Fall at age ten that he would remain in through high school. He has studied with leading members of the National Symphony Orchestra including Loran Stephenson and Yvonne Caruthers and also studied at different Chamber Music Camps across the Mid-Atlantic region. He studied under Carl Donakowski at James Madison University and graduated with a Bachelors in Music in 2007. At James Madison, he was the principal cellist in various orchestras, operas, and musicals, and in addition played with the Lexington Symphony from 2005-2010.
+
+Chad's passion for chamber music led him to the wedding and gig industry. He has performed in hundreds of weddings and other gigs over the last fifteen years working with Music By Anthem and Olivera Music Entertainment where he has performed a vast assortment of music genres. He also played in a string quartet aboard the Celebrity Infinity for four months in 2010. In addition, he has played live and recorded in a studio with different bands ranging from folk music with Brady Earnhart to modern rock with Spilling Dew, Remember Daylight, and Greasy Hands.
+
+Chad is also an avid gamer. His favorite genres are Adventure, RPGs, Sports, Puzzle, and FPSs although he admits he kind of sucks at FPSs. His favorite games include Final Fanatsy VI, Chrono Trigger, NHL 94, Zelda: aLttP, Mario Galaxy 2, World of Goo, and countless others. In 2006, Chad arranged a quick Zelda medley for the encore of his senior recital at James Madison University. The video went viral as it was one of the only video game covers at the time. This led to him organizing what is now the Triforce Quartet. Chad is the founder, arranger, and operator of Triforce Quartet and owes his influences to his classical music training and the memorable themes from his favorite video games he played as a kid.

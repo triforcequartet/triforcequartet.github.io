@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+const albums: CollectionEntry<'albums'>[] = await getCollection('albums');
+const bios = await getCollection('bios');
+const biosWithContent = await Promise.all(
+  bios.map(async (bio) => {
+    const { Content } = await bio.render();
+    return {
+      ...bio,
+      Content,
+    };
+  })
+);
+const events = await getCollection('events');
+const eventsWithContent = await Promise.all(
+  events.map(async (event) => {
+    const { Content } = await event.render();
+    return {
+      ...event,
+      Content,
+    };
+  })
+);
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Triforce Quartet">
+  <section></section>
+	<!-- <Welcome /> -->
+  <Section title="Music" id="music">
+    <ul class="albums">
+    {albums
+      .sort((a, b) => b.data.release.getTime() - a.data.release.getTime())
+      .map((post, index) => (
+      <li>
+          <article class="album-card">
+            <figure class="album-cover">
+              <img src={`/src/assets/albums/${post.slug}/cover.jpg`}/>
+            </figure>
+            <h3 class="album-title">{post.data.title}</h3>
+            <time class="album-date">{(post.data.release.getFullYear())}</time>
+            <div class="button-bar">
+              <details {...(index === 0 ? { open: true } : {})} class="tracklist-expand">
+                <summary>Tracklist</summary>
+                <ul class="tracklist">
+                  {post.data.tracklist.map((track: { title: string; duration: string }, index: number) => (
+                    <li>
+                      <h4>{track.title}</h4><time>{track.duration}</time>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+              <ul class="album-links">
+                <li>
+                  <a href="#">
+                    <img src="/src/assets/img/bandcamp.svg" alt="Bandcamp"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/src/assets/img/spotify.svg" alt="Spotify"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/src/assets/img/applemusic.svg" alt="Apple Music"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+      </li>
+    ))}
+    </ul>
+  </Section>
+  <Section title="Events" id="events">
+    <ul class="events">
+    {eventsWithContent.filter((event) => event.data.date > new Date()) // Filter future events
+      .sort((a, b) => a.data.date.getTime() - b.data.date.getTime()) // Soonest to furthest
+      .map((event) => (
+      <article class={`event-card${event.data.private ? ' event-private' : ''}`}>
+        <time class="event-date">
+          <span class="event-date-number">{(event.data.date.getDate())}</span>
+          <span class="event-date-month">{(event.data.date.toLocaleString('default', { month: 'short' }))}</span>
+        </time>
+        <div class="event-details">
+          <h3 class="event-title">{event.data.title}</h2>
+          <p class="event-location">{event.data.location}</p>
+          <p class="event-desc"><event.Content /></p>
+          {event.data.private ? (
+            <a class="event-link" href="#">Event Enquiry</a>
+          ) : (
+            <a class="event-link" href={event.data.tickets}>Get tickets</a>
+          )}
+
+        </div>
+      </article>
+    ))}
+    </ul>
+  </Section> 
+	<!-- <ul class="posts-list">
+    {biosWithContent.map(({ id, slug, data, Content }) => (
+  <article>
+    <h2>{data.name}</h2>
+    <h3>{data.position}</h3>
+    <Content />
+  </article>
+))}
+</ul>
+	<ul class="posts-list">
+    {eventsWithContent.filter((event) => event.data.date > new Date()) // Filter future events
+  .sort((a, b) => a.data.date.getTime() - b.data.date.getTime()) // Soonest to furthest
+  .map((event) => (
+  <article>
+    <h2>{event.data.title}</h2>
+    <h3>{event.data.date}</h3>
+    <h3>{event.data.location}</h3>
+    <event.Content />
+    <a href={event.data.tickets}>Get tickets</a>
+  </article>
+))}
+</ul> -->
+
+</Layout>

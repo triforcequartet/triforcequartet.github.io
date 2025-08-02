@@ -1,0 +1,76 @@
+---
+const { pathname } = Astro.url;
+---
+
+<header>
+  {pathname === "/" ? (
+    <h1 class="nav-title">
+      <a href="/">
+        <img src="/src/assets/img/tq.svg" class="nav-logo" />
+        <span>Triforce<br />Quartet</span>
+      </a>
+    </h1>
+  ) : (
+    <p class="nav-title">
+      <a href="/">
+        <img src="/src/assets/img/tq.svg" class="nav-logo" />
+        <span>Triforce<br />Quartet</span>
+      </a>
+    </p>
+  )}
+  <nav>
+    <ul class="navbar-links">
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a class="cta" href="#" id="book-button">Book</a></li>
+        <li>    
+          <button id="hamburger">
+              <svg aria-label="Menu" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="1" width="12" height="2" />
+                  <rect y="5" width="12" height="2" />
+                  <rect y="9" width="12" height="2" />
+              </svg>
+          </button>
+        </li>
+    </ul>
+    <dialog id="mobile-nav">
+      <button id="mobile-nav-close">
+        <svg aria-label="Close menu" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.05029" y="9.53554" width="12" height="2" transform="rotate(-45 1.05029 9.53554)" />
+          <rect x="2.46436" y="1.05025" width="12" height="2" transform="rotate(45 2.46436 1.05025)" />
+        </svg>
+      </button>
+        <ul>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </dialog>
+  </nav>
+</header>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+   const mobileNavClose = document.getElementById('mobile-nav-close');
+ const mobileNav = document.getElementById('mobile-nav');
+  hamburger?.addEventListener("click", () => {
+    mobileNav?.showModal();
+  });
+  mobileNavClose?.addEventListener("click", () => {
+    mobileNav?.close();
+  });
+
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+function handleBreakpointChange(e) {
+  if (e.matches && mobileNav?.open) {
+    mobileNav?.close();
+    document.getElementById('book-button')?.focus();
+  }
+}
+
+mediaQuery.addEventListener('change', handleBreakpointChange);
+</script>
