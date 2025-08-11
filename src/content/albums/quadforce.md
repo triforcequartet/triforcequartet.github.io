@@ -31,4 +31,7 @@ tracklist:
     duration: "1:19"
   - title: "Ending Theme (From “Final Fantasy VIII”)"
     duration: "6:21"
+bandcamp: "https://triforcequartet.bandcamp.com/album/quadforce"
+spotify: "https://open.spotify.com/album/6pQYsBpoSuskMAIf4TtkRl?si=fwy1LS78TgC1iEnCddbXoA"
+applemusic: "https://music.apple.com/ie/album/quadforce/1682275330"
 ---

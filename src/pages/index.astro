@@ -30,7 +30,19 @@ const eventsWithContent = await Promise.all(
 ---
 
 <Layout title="Triforce Quartet">
-  <section></section>
+  <section id="hero">
+    <h2>
+      Triforce Quartet
+      <span>levels up</span>
+      video game music
+    </h2>
+    <figure>
+      <img src="/img/hero.jpg" />
+    </figure>
+    <p>Add us to your party, wedding, convention, or event for traditional string quartet renditions of your favourite gaming soundtracks</p>
+    <a href="#" class="cta">Reserve your date</a>
+    <a href="#music">Discover the new album</a>
+  </section>
 	<!-- <Welcome /> -->
   <Section title="Music" id="music">
     <ul class="albums">
@@ -42,35 +54,53 @@ const eventsWithContent = await Promise.all(
             <figure class="album-cover">
               <img src={`/albums/${album.slug}/cover.jpg`}/>
             </figure>
-            <h3 class="album-title">{album.data.title}</h3>
-            <time class="album-date">{(album.data.release.getFullYear())}</time>
+            <div class="album-details">
+              <h3 class="album-title">{album.data.title}</h3>
+              <time class="album-date">{(album.data.release.getFullYear())}</time>
+            </div>
             <div class="button-bar">
               <details {...(index === 0 ? { open: true } : {})} class="tracklist-expand">
                 <summary>Tracklist</summary>
                 <ul class="tracklist">
-                  {album.data.tracklist.map((track: { title: string; duration: string }, index: number) => (
+                  {album.data.tracklist.map((track, index) => (
                     <li>
-                      <h4>{track.title}</h4><time>{track.duration}</time>
+                      <div class="track-title">
+                      <h4>{track.title}</h4>
+                      {track.subitems && (
+                        <ul class="subitems">
+                          {track.subitems.map((item) => (
+                            <li>{item}</li>
+                          ))}
+                        </ul>
+                      )}
+                      </div>
+                      <time>{track.duration}</time>
                     </li>
                   ))}
                 </ul>
               </details>
               <ul class="album-links">
+                {album.data.bandcamp && (
                 <li>
-                  <a href="#">
+                  <a href={album.data.bandcamp}>
                     <img src="/img/bandcamp.svg" alt="Bandcamp"/>
                   </a>
                 </li>
+                )}
+                {album.data.spotify && (
                 <li>
-                  <a href="#">
+                  <a href={album.data.spotify}>
                     <img src="/img/spotify.svg" alt="Spotify"/>
                   </a>
                 </li>
+                )}
+                {album.data.applemusic && (
                 <li>
-                  <a href="#">
+                  <a href={album.data.applemusic}>
                     <img src="/img/applemusic.svg" alt="Apple Music"/>
                   </a>
                 </li>
+                )}
               </ul>
             </div>
           </article>
@@ -91,7 +121,7 @@ const eventsWithContent = await Promise.all(
         <div class="event-details">
           <h3 class="event-title">{event.data.title}</h2>
           <p class="event-location">{event.data.location}</p>
-          <p class="event-desc"><event.Content /></p>
+          <event.Content />
           {event.data.private ? (
             <a class="event-link" href="#">Event Enquiry</a>
           ) : (

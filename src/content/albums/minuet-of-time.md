@@ -25,4 +25,7 @@ tracklist:
     duration: "02:53"
   - title: "Sogno di Volare (From “Civilization VI”)"
     duration: "04:40"
+bandcamp: "https://triforcequartet.bandcamp.com/album/minuet-of-time"
+spotify: "https://open.spotify.com/album/7baGMI0bffhrOaVO6Te1qs?si=C7XFMWWhRB6qDYNqPf-8kA"
+applemusic: "https://music.apple.com/ie/album/minuet-of-time/1479738764"
 ---

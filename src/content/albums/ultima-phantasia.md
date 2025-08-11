@@ -25,4 +25,7 @@ tracklist:
     duration: "04:13"
   - title: "Bonus Track - Main Theme (From “The Walking Dead”) / Main Theme (From “Game of Thrones”)"
     duration: "02:40"
+bandcamp: "https://triforcequartet.bandcamp.com/album/ultima-phantasia"
+spotify: "https://open.spotify.com/album/0p8P6mcDNNMVoHi0lmGAUq?si=_VpSqxIxTwuM1q6XT35Z7w"
+applemusic: "https://music.apple.com/ie/album/ultima-phantasia/1141475266"
 ---

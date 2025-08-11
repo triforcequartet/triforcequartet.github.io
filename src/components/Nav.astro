@@ -20,10 +20,10 @@ const { pathname } = Astro.url;
   )}
   <nav>
     <ul class="navbar-links">
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a class="cta" href="#" id="book-button">Book</a></li>
         <li>    
           <button id="hamburger">
@@ -42,7 +42,7 @@ const { pathname } = Astro.url;
           <rect x="2.46436" y="1.05025" width="12" height="2" transform="rotate(45 2.46436 1.05025)" />
         </svg>
       </button>
-        <ul>
+        <ul class="mobile-nav-links">
             <li><a href="#music">Music</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#">Services</a></li>
@@ -54,8 +54,34 @@ const { pathname } = Astro.url;
 
 <script>
   const hamburger = document.getElementById('hamburger') as HTMLButtonElement;
-   const mobileNavClose = document.getElementById('mobile-nav-close');
- const mobileNav = document.getElementById('mobile-nav') as HTMLDialogElement;
+  const mobileNavClose = document.getElementById('mobile-nav-close');
+  const mobileNav = document.getElementById('mobile-nav') as HTMLDialogElement;
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    const href = link.getAttribute('href');
+    if (!href) return; // stop if there's no href
+
+    // Only handle internal anchor links like "#music"
+    if (href.startsWith('#') && href.length > 1) {
+      // event.preventDefault(); // stop the browser from jumping immediately
+
+      const targetId = href.slice(1);
+      const targetSection = document.getElementById(targetId);
+      const heading = targetSection?.querySelector('h2');
+
+      mobileNav.close();
+
+      // Let the dialog finish closing before jumping/focusing
+        if (heading) {
+          heading.focus({ preventScroll: true }); // focus without moving
+          // heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+  });
+});
+  
   hamburger.addEventListener("click", () => {
     mobileNav.showModal();
   });

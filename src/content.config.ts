@@ -5,18 +5,19 @@ const albumsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     release: z.string().transform((str) => new Date(str)),
-    // summary: z.string().optional(), // Change from 'description' to match your frontmatter
-    // tags: z.array(z.string()).optional(),
-    type: z.literal("album"), // Enforce that 'type' must be 'article'
+    type: z.literal("album"),
     tracklist: z.array(
       z.object({
         title: z.string(),
+        subitems: z.array(z.string()).optional(),
         duration: z.string().regex(/^\d+:\d{2}$/, {
           message: "Duration must be in mm:ss format",
         }),
-      }),
+      })
     ),
-    // url: z.string(), // Optional if needed; otherwise, you can remove this if you don’t plan to use it
+    bandcamp: z.string().optional(),
+    applemusic: z.string().optional(),
+    spotify: z.string().optional(),
   }),
 });
 

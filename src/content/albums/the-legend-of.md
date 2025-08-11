@@ -23,4 +23,7 @@ tracklist:
     duration: "03:45"
   - title: "Banjo Kazooie - Main Theme"
     duration: "01:14"
+bandcamp: "https://triforcequartet.bandcamp.com/album/the-legend-of"
+spotify: "https://open.spotify.com/album/4J543HO0SPF5n86RKqdFbg?si=53vZQROERK-eJY-IUMc_Rg"
+applemusic: "https://music.apple.com/ie/album/the-legend-of/913762727"
 ---
