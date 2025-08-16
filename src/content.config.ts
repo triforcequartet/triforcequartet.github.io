@@ -72,6 +72,14 @@ const weddingsCollection = defineCollection({
   }),
 });
 
+const otherservicesCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page: z.literal("otherservices"),
+    section: z.number(),
+  }),
+});
+
 
 
 export const collections = {
@@ -82,4 +90,5 @@ export const collections = {
   corporates: corporatesCollection,
   schools: schoolsCollection,
   weddings: weddingsCollection,
+  otherservices: otherservicesCollection
 };

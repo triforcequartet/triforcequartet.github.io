@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+const otherservices = await getCollection('otherservices');
+const otherservicesContent = await Promise.all(
+  otherservices.map(async (otherservice) => {
+    const { Content } = await otherservice.render();
+    return {
+      ...otherservice,
+      Content,
+    };
+  })
+);
+
+// Sort by section number
+const sortedotherservices = otherservicesContent.sort(
+  (a, b) => Number(a.data.section) - Number(b.data.section)
+);
+
+---
+
+<Layout title="Triforce Quartet" main="services">
+  <section id="hero">
+    <h2>
+      Triforce Quartet
+      <span>levels up</span>
+      video game music
+    </h2>
+    <figure>
+      <img src="/img/hero.jpg" />
+    </figure>
+    <h4>The Ultimate String Quartet Experience for Conventions</h4>
+    <p>Looking to add an unforgettable musical experience to your convention? The Triforce Quartet delivers an electrifying fusion of classical instrumentation and video game nostalgia that captivates fans across all fandoms. With a repertoire that spans iconic themes from Zelda, Final Fantasy, Super Mario, Chrono Trigger, Halo, Undertale, and more, our performances bring beloved game soundtracks to life with precision, passion, and power.</p>
+    <a href="#" class="cta">Reserve your date</a>
+    <a href="#music">Discover the new album</a>
+  </section>
+	<!-- <Welcome /> -->
+    {sortedotherservices.map((otherservice) => (
+        <Section title={otherservice.data.title}>
+            <otherservice.Content />
+        </Section>
+    ))}
+
+</Layout>
