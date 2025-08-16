@@ -65,6 +65,15 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+strong {
+    font-weight: 500;
+}
+
+small {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -88,7 +97,9 @@ time, .tracklist li::before {
     
 }
 
-
+.align-center {
+    text-align: center;
+}
 
 /* NAVBAR */
 
@@ -121,6 +132,7 @@ header {
     gap: .25rem;
     height: 100%;
     align-items: center;
+    text-decoration: none;
 }
 
 .nav-logo {
@@ -152,7 +164,7 @@ nav a, #hamburger, #mobile-nav-close {
     display: inline-block;
 }
 
-.cta {
+.cta, .contact-button {
     background-color: black;
     color: white;
 }
@@ -666,13 +678,18 @@ h2 {
     object-fit: cover;
 }
 
-#hero p {
+#hero p, #hero h4 {
     grid-column: 1 / -1;
     text-align: center;
     line-height: 1.25rem;
-    margin-top: 2rem;
     max-width: 40ch;
     justify-self: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+#hero figure + p, #hero figure + h4 {
+    margin-top: 2rem;
 }
 
 #hero a {
@@ -689,3 +706,77 @@ h2 {
 #hero a:first-of-type {
     margin-top: 1rem;
 }
+
+
+
+/* Services */
+
+.services {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.services h2 + p {
+    margin-top: 1rem;
+}
+
+.services p, .services ul, .services blockquote {
+    grid-column: 1 / -1;
+    margin-top: .5rem;
+}
+
+.services blockquote {
+    font-style: italic;
+}
+
+.services ul {
+    margin-top: 1rem;
+    line-height: 1rem;
+}
+
+.services li {
+    padding: .5rem;
+    text-align: center;
+    border-bottom: .0625rem solid rgba(0,0,0,0.33);
+}
+
+.services li:not(:has(h3)):last-of-type {
+    border-bottom: 0;
+}
+
+.services li:has(h3) {
+    border: .125rem solid black;
+    margin-top: 2rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.services li:has(h3):first-of-type {
+    margin-top: 1rem;
+}
+
+.services li h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+}
+
+.services li h3 ~ p {
+    line-height: 1.25rem;
+}
+
+.services h4 {
+    font-weight: 700;
+}   
+
+.contact-button {
+    border: 0;
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 700;
+    padding: .5rem 3rem;
+    cursor: pointer;
+    margin: .5rem auto 0;
+    display: block;
+}
+

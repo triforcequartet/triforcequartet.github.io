@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+const weddings = await getCollection('weddings');
+const weddingsContent = await Promise.all(
+  weddings.map(async (wedding) => {
+    const { Content } = await wedding.render();
+    return {
+      ...wedding,
+      Content,
+    };
+  })
+);
+
+// Sort by section number
+const sortedWeddings = weddingsContent.sort(
+  (a, b) => Number(a.data.section) - Number(b.data.section)
+);
+
+---
+
+<Layout title="Triforce Quartet" main="services">
+  <section id="hero">
+    <h2>
+      Triforce Quartet
+      <span>levels up</span>
+      video game music
+    </h2>
+    <figure>
+      <img src="/img/hero.jpg" />
+    </figure>
+    <p>Add us to your party, wedding, convention, or event for traditional string quartet renditions of your favourite gaming soundtracks</p>
+    <a href="#" class="cta">Reserve your date</a>
+    <a href="#music">Discover the new album</a>
+  </section>
+	<!-- <Welcome /> -->
+    {sortedWeddings.map((wedding) => (
+        <Section title={wedding.data.title}>
+            <wedding.Content />
+        </Section>
+    ))}
+
+</Layout>

@@ -5,9 +5,10 @@ import '../styles/global.css';
  
 interface Props {
 	title: string;
+	main?: string;
 }
 
-const { title } = Astro.props;
+const { title, main } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +22,9 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Nav />
-		<slot />
+		<main class={main}>
+			<slot />
+		</main>
 		<Footer />
 	</body>
 </html>

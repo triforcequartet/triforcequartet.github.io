@@ -40,9 +40,46 @@ const eventsCollection = defineCollection({
   }),
 });
 
+const conventionsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page: z.literal("conventions"),
+    section: z.number(),
+  }),
+});
+
+const corporatesCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page: z.literal("corporates"),
+    section: z.number(),
+  }),
+});
+
+const schoolsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page: z.literal("schools"),
+    section: z.number(),
+  }),
+});
+
+const weddingsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page: z.literal("weddings"),
+    section: z.number(),
+  }),
+});
+
+
 
 export const collections = {
   albums: albumsCollection,
   bios: biosCollection,
-  events: eventsCollection
+  events: eventsCollection,
+  conventions: conventionsCollection,
+  corporates: corporatesCollection,
+  schools: schoolsCollection,
+  weddings: weddingsCollection,
 };
