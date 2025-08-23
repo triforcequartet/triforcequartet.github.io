@@ -25,6 +25,32 @@ const { title, main } = Astro.props;
 		<main class={main}>
 			<slot />
 		</main>
-		<Footer />
+		<Footer /> 
+		<dialog id="contact-dialog">
+			<button id="contact_close">Close
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+			</button>
+			<h2>Contact TQ</h2>
+			<form action="https://formsubmit.co/chlrooke@gmail.com" method="POST">
+				<label for="contact_name">Name <small>(required)</small></label>
+				<input id="contact_name" type="text" name="name" required>
+				<label for="contact_email">Email <small>(required)</small></label>
+				<input type="email" name="email" required>
+				<label for="event_type">Event type:</label>
+				<select name="event_type" id="event_type">
+					<option value="none" disabled selected>Choose an event type </option>
+					<option value="convention">Convention</option>
+					<option value="corporate">Corporate</option>
+					<option value="school">School</option>
+					<option value="wedding">Wedding</option>
+					<option value="other-event">Other (Please detail below)</option>
+				</select>
+				<label for="contact_message">Contact Message:</label>
+				<input type="text" name="_honey" style="display:none">
+				<textarea id="contact_message" rows="6" name="contact_message" />
+				<button type="submit" class="cta">Send</button>
+			</form>
+		</dialog>
 	</body>
+	<script src="/src/scripts/dialog.js" type="module"></script>
 </html>

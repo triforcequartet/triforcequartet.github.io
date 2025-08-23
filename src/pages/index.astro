@@ -32,15 +32,15 @@ const eventsWithContent = await Promise.all(
 <Layout title="Triforce Quartet">
   <section id="hero">
     <h2>
-      Triforce Quartet
-      <span>levels up</span>
-      video game music
+      <span>Triforce Quartet<br />
+      levels up<br />
+      video game music</span>
     </h2>
     <figure>
       <img src="/img/hero.jpg" />
     </figure>
     <p>Add us to your party, wedding, convention, or event for traditional string quartet renditions of your favourite gaming soundtracks</p>
-    <a href="#" class="cta">Reserve your date</a>
+    <button class="cta" data-contact-dialog>Reserve your date</button>
     <a href="#music">Discover the new album</a>
   </section>
 	<!-- <Welcome /> -->
@@ -123,7 +123,7 @@ const eventsWithContent = await Promise.all(
           <p class="event-location">{event.data.location}</p>
           <event.Content />
           {event.data.private ? (
-            <a class="event-link" href="#">Event Enquiry</a>
+            <button class="event-link" data-contact-dialog>Event Enquiry</button>
           ) : (
             <a class="event-link" href={event.data.tickets}>Get tickets</a>
           )}
@@ -137,7 +137,9 @@ const eventsWithContent = await Promise.all(
     <ul class="bios">
     {biosWithContent.map((bio) => (
       <article class='bio-card'>
-          <img src={`/bios/${bio.slug}.jpg`}/>
+          <figure class="bio-image">
+            <img src={`/bios/${bio.slug}.jpg`}/>
+          </figure>
           <h3 class="bio-name">{bio.data.name}</h2>
           <p class="bio-position">{bio.data.position}</p>
           <details class="bio-expand">

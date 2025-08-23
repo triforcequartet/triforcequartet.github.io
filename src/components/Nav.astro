@@ -20,11 +20,31 @@ const { pathname } = Astro.url;
   )}
   <nav>
     <ul class="navbar-links">
-        <li><a href="#music">Music</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a class="cta" href="#" id="book-button">Book</a></li>
+        {pathname === "/" ? (
+          <li><a href="#music">Music</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about">About</a></li>
+        ) : (
+          <li><a href="/#music">Music</a></li>
+          <li><a href="/#events">Events</a></li>
+          <li><a href="/#about">About</a></li>
+        )}
+        <li id="services-menu">
+          <button aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="services-list"
+            id="services-button">
+            Services
+          </button>
+          <ul aria-hidden="true" id="services-list">
+            <li><a href="/conventions">Conventions</a></li>
+            <li><a href="/weddings">Weddings</a></li>
+            <li><a href="/schools">Schools</a></li>
+            <li><a href="/corporates">Corporate</a></li>
+            <li><a href="/other-services">Other Events</a></li>
+          </ul>
+        </li>
+        <li><button class="cta" id="book-button" data-contact-dialog>Book</button></li>
         <li>    
           <button id="hamburger">
               <svg aria-label="Menu" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -43,10 +63,25 @@ const { pathname } = Astro.url;
         </svg>
       </button>
         <ul class="mobile-nav-links">
+          {pathname === "/" ? (
             <li><a href="#music">Music</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#">Services</a></li>
             <li><a href="#about">About</a></li>
+          ) : (
+            <li><a href="/#music">Music</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li><a href="/#about">About</a></li>
+          )}
+          <li>
+              <p>Services</p>
+              <ul>
+                <li><a href="/conventions">Conventions</a></li>
+                <li><a href="/weddings">Weddings</a></li>
+                <li><a href="/schools">Schools</a></li>
+                <li><a href="/corporates">Corporate</a></li>
+                <li><a href="/other-services">Other Events</a></li>
+              </ul>
+          </li>
         </ul>
     </dialog>
   </nav>
@@ -95,6 +130,19 @@ mobileNavLinks.forEach(link => {
       mobileNav.close();
       document.getElementById('book-button')?.focus();
     }
+  });
+
+  const servicesButton = document.getElementById('services-button') as HTMLButtonElement;
+  const servicesMenu = document.getElementById('services-list') as HTMLUListElement;
+
+  servicesButton.addEventListener('click', () => {
+    const expanded = servicesButton.getAttribute('aria-expanded') === 'true';
+
+    // Toggle expanded state
+    servicesButton.setAttribute('aria-expanded', String(!expanded));
+
+    // Toggle menu visibility
+    servicesMenu.setAttribute('aria-hidden', String(expanded));
   });
 
 </script>

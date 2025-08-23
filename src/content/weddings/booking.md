@@ -21,6 +21,6 @@ Our repertoire includes music from:
 
 Whether you’re a gamer, a romantic, or both we’ll help create a soundtrack that your guests will never forget. 
 
-<button class="contact-button">Contact Us</button>
+<button class="contact-button" data-contact-dialog>Contact Us</button>
 
-<small class="align-center">Audio Samples & Wedding Packages Available Upon Request</small>
+<small>Audio Samples & Wedding Packages Available Upon Request</small>
