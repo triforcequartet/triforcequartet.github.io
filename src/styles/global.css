@@ -72,7 +72,7 @@ strong {
 
 small {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
 }
 
 button {
@@ -107,7 +107,7 @@ img {
 
 time, .tracklist li::before {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
     color: rgba(0,0,0,0.5);
     display: inline-block;
     
@@ -359,7 +359,7 @@ h2 {
 
 .album-title {
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
     font-weight: 900;
     align-self: center;
     margin-top: 1rem;
@@ -405,7 +405,7 @@ h2 {
     flex-grow: 1;
     padding: 0 1rem 0 .5rem;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.625rem;
 }
 
 .tracklist h4 {
@@ -436,7 +436,7 @@ h2 {
     background-color: black;
     color: white;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     width: fit-content;
 }
@@ -603,13 +603,13 @@ h2 {
 
 .event-title {
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
     font-weight: 900;
 }
 
 .event-location {
     font-size: 1.25rem;
-    line-height: 1.5rem;
+    line-height: 1.625rem;
     font-weight: 900;
     color: rgb(86,86,86);
 }
@@ -625,7 +625,7 @@ h2 {
     background-color: black;
     padding: .5rem 1.5rem;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     color: white;
     font-weight: 700;
     width: fit-content;
@@ -655,6 +655,25 @@ h2 {
 
 /* BIOS */
 
+#about > p {
+    grid-column: 1 / -1;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: .75rem;
+}
+
+@media screen and (min-width: 40rem) {
+    #about > p {
+        grid-column: 1 / -4;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    #about > p {
+        grid-column: 1 / -6;
+    }
+}
+
 .bios {
     grid-column: 1 / -1;
     align-items: start;
@@ -682,7 +701,7 @@ h2 {
 
 .bio-position {
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     color: rgba(0,0,0,0.5);
     text-align: center;
@@ -694,7 +713,7 @@ h2 {
     background-color: black;
     color: white;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     width: fit-content;
     margin: 1rem auto -1.0625rem;
@@ -703,7 +722,7 @@ h2 {
 .bio-content {
     margin-top: 2rem;
     font-size: 1.125rem;
-    line-height: 1.375rem;
+    line-height: 1.5rem;
     padding-bottom: 1rem;
     max-width: 60ch;
 }
@@ -867,7 +886,7 @@ h2 {
     max-width: 60ch;
     justify-self: center;
     font-size: 1.25rem;
-    line-height: 1.5rem;
+    line-height: 1.625rem;
 }
 
 #hero p, #hero h4 {
@@ -885,7 +904,7 @@ h2 {
     margin-top: .5rem;
     padding: .375rem 2.5rem;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     border: .125rem solid black;
 }
@@ -958,7 +977,7 @@ h2 {
 .services li h3 {
     font-size: 1.5rem;
     font-weight: 900;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
 }
 
 .services li h3 ~ p {
@@ -972,7 +991,7 @@ h2 {
 .contact-button, dialog form button {
     border: 0;
     font-size: 1.125rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
     font-weight: 700;
     padding: .5rem 3rem;
     cursor: pointer;
