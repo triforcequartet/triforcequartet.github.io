@@ -1,10 +1,10 @@
 ---
-title: "Outside-of-the-box Idea? Challenge accepted. Let’s Create Something One-of-a-Kind"
+title: "Outside-of-the-box Idea? Challenge accepted."
 page: "otherservices"
 section: 3
 ---
 
-If your event is a little outside the box—or completely unlike anything we’ve done before—we’d love to hear about it.
+Let’s level up together and craft something that’s one-of-a-kind. We welcome you to reach out with your own unique ideas, event requests, or vision for how our quartet could musically be part of a moment you are creating. We can talk through details together and score a memorable musical experience for you.
 
 <button class="contact-button" data-contact-dialog>Contact Us</button>
 

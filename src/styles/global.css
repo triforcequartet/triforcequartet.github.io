@@ -82,6 +82,7 @@ button {
 a, nav button {
     text-decoration: none;
     color: black;
+    color: #0e5135;
     display: inline-block;
 }
 
@@ -155,6 +156,7 @@ header button {
     height: 100%;
     align-items: center;
     text-decoration: none;
+    color: black;
 }
 
 .nav-logo {
@@ -165,7 +167,7 @@ header button {
 
 nav, .navbar-links {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 nav a, #hamburger, #mobile-nav-close, nav button {
@@ -174,6 +176,7 @@ nav a, #hamburger, #mobile-nav-close, nav button {
     padding: .3125rem .6875rem;
     background-color: white;
     border: 0.0625rem solid black;
+    border-color: #0e5135;
     box-sizing: border-box;
     cursor: pointer;
     width: fit-content;
@@ -229,7 +232,13 @@ nav a, #hamburger, #mobile-nav-close, nav button {
 
 .cta, .contact-button {
     background-color: black;
+    background-color: #0e5135;
     color: white;
+}
+
+.contact-link {
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #hamburger, #mobile-nav-close {
@@ -333,7 +342,26 @@ h2 {
     font-weight: 900;
     grid-column: 1 / -1;
     margin-top: .5rem;
-    max-width: 30ch;
+    /* max-width: 30ch; */
+    position: relative;
+    padding-inline-start: 3rem;
+}
+
+h2::before {
+    content: '';
+    width: 2.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('img/tq.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero h2::before {
+    content: unset;
 }
 
 
@@ -434,6 +462,7 @@ h2 {
     cursor: pointer;
     padding: .5rem 1.5rem;
     background-color: black;
+    background-color: #0e5135;
     color: white;
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -711,6 +740,7 @@ h2 {
     cursor: pointer;
     padding: .5rem 1.5rem;
     background-color: black;
+    background-color: #0e5135;
     color: white;
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -907,6 +937,7 @@ h2 {
     line-height: 1.5rem;
     font-weight: 700;
     border: .125rem solid black;
+    border-color: #0e5135;
 }
 
 #hero button {
@@ -932,7 +963,7 @@ h2 {
 }
 
 .services p, .services section > ul, .services section > blockquote {
-    max-width: 60ch;
+    /* max-width: 60ch; */
 }
 
 .services blockquote {
@@ -953,14 +984,42 @@ h2 {
 
 .services li {
     padding: .5rem;
-    text-align: center;
-    background-color: rgba(0,0,0,0.06);
+    /* text-align: center;
+    background-color: rgba(0,0,0,0.06); */
     grid-column: 1 / -1;
 }
 
 /* .services li:not(:has(h3)):last-of-type {
     border-bottom: 0;
 } */
+
+.services ul:not(:has(h3)) {
+    display: unset;
+    columns: 1;
+}
+
+.services ul:not(:has(h3)) + p {
+    margin-top: 1rem;
+}
+
+.services ul:not(:has(h3)) li {
+    padding: 0;
+    line-height: 1.5rem;
+    padding-inline-start: 1rem;
+    position: relative;
+}
+
+.services ul:not(:has(h3)) li::before {
+    content: '';
+    position: absolute;
+    top: calc(62.5% - .5rem);
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+    background-color: black;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
 
 .services li:has(h3) {
     border: .125rem solid black;
@@ -1016,6 +1075,11 @@ h2 {
     .services li:has(h3):nth-of-type(2) {
         margin-top: calc(var(--gap) / 2);
     }
+
+    .services ul:not(:has(h3)) {
+        columns: 2;
+    }
+
 }
 
 @media screen and (min-width: 64rem) {
@@ -1029,6 +1093,12 @@ h2 {
     .services ul li:last-of-type:nth-child(3n + 1):not(:has(h3)) {
         grid-column: 5 / span 4;
     }
+
+    .services ul:not(:has(h3)) {
+        grid-column: span 8;
+        columns: 2;
+    }
+
 
 }
 

@@ -4,7 +4,7 @@ page: "weddings"
 section: 4
 ---
 
-Music has a unique ability to connect people through a shared experience. It evokes emotion, harps on our nostalgic heart strings, and colors in the collective atmosphere with richness and warmth.
+Whether you’re a gamer, a romantic, or both we’ll help create a soundtrack that will be memorable for you personally and that your guests will connect with. You can always <a class="contact-link" data-contact-dialog>reach out to us</a> to discuss your unique musical musical vision for your day.
 
 Our repertoire includes music from:
 

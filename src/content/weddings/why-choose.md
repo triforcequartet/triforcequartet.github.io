@@ -9,19 +9,19 @@ section: 3
     
     While we’re best known for our video game arrangements, we are also classically trained professional musicians with a deep love and respect for traditional wedding music. Whether you want Pachelbel’s Canon or Zelda’s Lullaby, Ave Maria or Aerith’s Theme, we can tailor our set to reflect your vision be it timeless, modern, geeky, or a blend of all three.
 
-    The music can help guide each chapter of your day. A tender melody as you walk down the aisle. A joyful tune as you exit as newlyweds. Gentle, romantic background music for cocktails and dinner. A thread to sync up all the day’s transitions with every moment scored with intention.
+    Music can help guide each chapter of your day. A tender melody as you walk down the aisle. A joyful tune as you exit as newlyweds. Gentle, romantic background music for cocktails and dinner. A special nod to your love as a couple for a first dance. Triforce Quartet can help thread all the day’s transitions to sync each moment with scored intention.
 
 - 
-    ### Personalized for Your Ceremony
+    ### Experience Brought to Your Wedding Day
     
     Because of our extensive experience at all different kinds of weddings, we have a good understanding of the vital elements to make sure your day is well orchestrated and stress-free. We work closely with wedding planners, photographers, videographers, and venue staff to ensure the logistics and flow are coordinated and maximize you and your guests’ experience.
-    
+
     Music has a unique ability to connect people through a shared experience. It evokes emotion, harps on our nostalgic heart strings, and colors in the collective atmosphere with richness and warmth. We work with you to choose the perfect music for every moment. You can go full-classical, full-nerd, or somewhere in between. We’ll make sure it’s beautiful, seamless, and true to you.
 
 - 
     ### Cocktail Hour & Reception Entertainment
     
-    Cocktail hour can be a great time to add ambiance and charm to your post-ceremony events with a curated mix of elegant background music. With our music variety, guests will recognize beloved classical pieces, cinematic themes, and (if you choose) subtle nods to the melodies from games that defined your childhood.
+    Cocktail hour can be a great time to add ambiance and charm to your post-ceremony events with an assembled mix of elegant background music. With our music variety, guests will recognize beloved classical pieces, cinematic themes, current hits, and (if you wish) subtle nods to the melodies from games that defined your childhood.
 
     Many people choose to “press stop” on our music playing after cocktail hour. Should you desire us to stay and extend our entertainment to your reception, we would be happy to do so. You have the freedom and flexibility to choose a package that fits your needs, budget, and vision.
 

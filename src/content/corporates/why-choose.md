@@ -11,7 +11,7 @@ section: 1
 - 
     ### Polished and Professional
 
-    We understand the expectations of corporate events: punctuality, professionalism, and seamless coordination with your event team. Our musicians are classically trained, experienced in a variety of venues, and comfortable adjusting for event flow and timing.
+    We understand the expectations of corporate events: punctuality, professionalism, and seamless coordination with your event team. Our musicians are classically trained, experienced in a variety of venue spaces, and familiar with the necessary adaptability to ensure optimal event flow and timing.
 - 
     ### Customizable Programming
 
