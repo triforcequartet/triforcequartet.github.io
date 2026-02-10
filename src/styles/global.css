@@ -1007,12 +1007,14 @@ h2::before {
     line-height: 1.5rem;
     padding-inline-start: 1rem;
     position: relative;
+    margin-bottom: .5rem;
+    break-inside: avoid-column;
 }
 
 .services ul:not(:has(h3)) li::before {
     content: '';
     position: absolute;
-    top: calc(62.5% - .5rem);
+    top: .5rem;
     left: 0;
     width: .5rem;
     height: .5rem;
@@ -1047,6 +1049,10 @@ h2::before {
     font-weight: 700;
 }   
 
+.services h4 + p {
+    margin-top: 0;
+}
+
 .contact-button, dialog form button {
     border: 0;
     font-size: 1.125rem;
@@ -1078,6 +1084,7 @@ h2::before {
 
     .services ul:not(:has(h3)) {
         columns: 2;
+        gap: 1.5rem;
     }
 
 }
@@ -1096,7 +1103,6 @@ h2::before {
 
     .services ul:not(:has(h3)) {
         grid-column: span 8;
-        columns: 2;
     }
 
 
