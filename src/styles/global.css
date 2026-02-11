@@ -327,6 +327,7 @@ section {
 
 section:nth-of-type(even) {
     background-color: rgb(247,247,247);
+    background: rgba(74, 186, 145, 0.25);
 }
 
 .section-icon {
@@ -713,6 +714,7 @@ h2::before {
     padding: 1rem 1rem 0;
     margin: 2rem auto 0;
     gap: .5rem;
+    background-color: white;
 }
 
 .bio-card img {

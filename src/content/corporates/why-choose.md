@@ -15,7 +15,7 @@ section: 1
 - 
     ### Customizable Programming
 
-    Every company has its own vision and reason for including music in their event. We can help shape the needs of your company through music whether it’s a grand opening set to cinematic themes, a holiday party with warm classics in the background, or a conference welcome with energizing, contemporary pieces.
+    Planning a grand opening and want music set to cinematic themes? Putting together a holiday party with the vision of warm classics in the background? Hosting a conference and want to welcome guests with energizing, contemporary pieces? Every company has its own vision and reason for including music in their event. We can help shape the needs of your company through intentional planning and our vast array of music selection.
 - 
     ### Nationwide & Event-Ready
 

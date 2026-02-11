@@ -17,4 +17,4 @@ section: 3
 
     Beloved titles like The Legend of Zelda, Final Fantasy, Mario, Halo, and Skyrim
 
-We can design your event’s music to be entirely classical, entirely modern, or an artful mix of both. Either way, we ensure the musical pieces you select or leave to us to plan for you perfectly matches your audience and occasion.
+We can design your event’s music to be entirely classical, entirely modern, or an artful mix of both. Either way, we ensure the musical pieces you select, or leave to us to plan for you, perfectly matches your audience and occasion.
