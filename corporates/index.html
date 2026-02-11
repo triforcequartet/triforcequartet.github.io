@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.12.0"><title>Triforce Quartet</title><link rel="stylesheet" href="/_astro/conventions.Dk-1hXKZ.css"></head> <body> <header> <p class="nav-title"> <a href="/"> <img src="/img/tq.svg" class="nav-logo"> <span>Triforce<br>Quartet</span> </a> </p> <nav> <ul class="navbar-links"> <li><a href="/#music">Music</a></li>
+          <li><a href="/#events">Events</a></li>
+          <li><a href="/#about">About</a></li> <li id="services-menu"> <button aria-haspopup="true" aria-expanded="false" aria-controls="services-list" id="services-button">
+Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path></svg> </button> <ul aria-hidden="true" id="services-list"> <li><a href="/conventions">Conventions</a></li> <li><a href="/weddings">Weddings</a></li> <li><a href="/schools">Schools</a></li> <li><a href="/corporates">Corporate</a></li> <li><a href="/other-services">Other Events</a></li> </ul> </li> <li><button class="cta" id="book-button" data-contact-dialog>Book</button></li> <li> <button id="hamburger"> <svg aria-label="Menu" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"> <rect y="1" width="12" height="2"></rect> <rect y="5" width="12" height="2"></rect> <rect y="9" width="12" height="2"></rect> </svg> </button> </li> </ul> <dialog id="mobile-nav"> <button id="mobile-nav-close"> <svg aria-label="Close menu" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"> <rect x="1.05029" y="9.53554" width="12" height="2" transform="rotate(-45 1.05029 9.53554)"></rect> <rect x="2.46436" y="1.05025" width="12" height="2" transform="rotate(45 2.46436 1.05025)"></rect> </svg> </button> <ul class="mobile-nav-links"> <li><a href="/#music">Music</a></li>
+            <li><a href="/#events">Events</a></li>
+            <li><a href="/#about">About</a></li> <li> <p>Services</p> <ul> <li><a href="/conventions">Conventions</a></li> <li><a href="/weddings">Weddings</a></li> <li><a href="/schools">Schools</a></li> <li><a href="/corporates">Corporate</a></li> <li><a href="/other-services">Other Events</a></li> </ul> </li> </ul> </dialog> </nav> </header> <script type="module">const s=document.getElementById("hamburger"),d=document.getElementById("mobile-nav-close"),t=document.getElementById("mobile-nav"),r=document.querySelectorAll(".mobile-nav-links a");r.forEach(e=>{e.addEventListener("click",m=>{const n=e.getAttribute("href");if(n&&n.startsWith("#")&&n.length>1){const i=n.slice(1),o=document.getElementById(i)?.querySelector("h2");t.close(),o&&o.focus({preventScroll:!0})}})});s.addEventListener("click",()=>{t.showModal()});d?.addEventListener("click",()=>{t.close()});const a=window.matchMedia("(min-width: 768px)");a.addEventListener("change",e=>{e.matches&&t.open&&(t.close(),document.getElementById("book-button")?.focus())});const c=document.getElementById("services-button"),l=document.getElementById("services-list");c.addEventListener("click",()=>{const e=c.getAttribute("aria-expanded")==="true";c.setAttribute("aria-expanded",String(!e)),l.setAttribute("aria-hidden",String(e))});</script> <main class="services">  <section id="hero"> <figure> <img src="/img/corporates.jpg"> </figure> <h2> <span>Elevating Corporate <br>Events with Music <br>That Inspires</span> </h2> <h4>Professional Musicianship. Unforgettable Experiences.</h4> <p>When it comes to corporate events, the right music does more than fill the air, it sets the tone, creates connections, and leaves a lasting impression.</p> <p>
+Triforce Quartet is a professional string quartet known for our versatility, precision, and dynamic performances. Our repertoire blends timeless classical music with fresh, crowd-pleasing arrangements of video game, film, and pop soundtracks, making us the perfect choice for events that want sophistication with a modern edge.
+</p> <button class="cta" data-contact-dialog>Reserve your date</button> </section>  <section> <!-- <img src="/img/tq.svg" alt="Triforce Quartet logo" class="section-icon"/> --> <h2 tabindex="-1">Why Companies Choose Triforce Quartet</h2>  <ul>
+<li>
+<h3 id="versatile--tailored-to-your-brand">Versatile &#x26; Tailored to Your Brand</h3>
+<p>From black-tie galas to product launches, networking receptions, or employee appreciation events, we adapt our music to match your company’s image and event goals. We can deliver an all-classical program for elegance and refinement, or incorporate recognizable and unexpected favorites that spark conversation and engagement.</p>
+</li>
+<li>
+<h3 id="polished-and-professional">Polished and Professional</h3>
+<p>We understand the expectations of corporate events: punctuality, professionalism, and seamless coordination with your event team. Our musicians are classically trained, experienced in a variety of venue spaces, and familiar with the necessary adaptability to ensure optimal event flow and timing.</p>
+</li>
+<li>
+<h3 id="customizable-programming">Customizable Programming</h3>
+<p>Planning a grand opening and want music set to cinematic themes? Putting together a holiday party with the vision of warm classics in the background? Hosting a conference and want to welcome guests with energizing, contemporary pieces? Every company has its own vision and reason for including music in their event. We can help shape the needs of your company through intentional planning and our vast array of music selection.</p>
+</li>
+<li>
+<h3 id="nationwide--event-ready">Nationwide &#x26; Event-Ready</h3>
+<p>We’ve performed at conventions, high-profile galas, weddings, and corporate functions across the country. We provide our own arrangements, collaborate with AV teams when needed, and bring the same high standard of performance to every booking.</p>
+</li>
+</ul>  </section><section> <!-- <img src="/img/tq.svg" alt="Triforce Quartet logo" class="section-icon"/> --> <h2 tabindex="-1">Event Types We Serve</h2>  <ul>
+<li>Corporate Galas &#x26; Fundraisers</li>
+<li>Awards Ceremonies</li>
+<li>Holiday Parties</li>
+<li>Conferences &#x26; Trade Shows</li>
+<li>Product Launches &#x26; Brand Activations</li>
+<li>VIP Receptions</li>
+<li>Team Celebrations &#x26; Milestone Events</li>
+</ul>  </section><section> <!-- <img src="/img/tq.svg" alt="Triforce Quartet logo" class="section-icon"/> --> <h2 tabindex="-1">Musical Styles We Offer</h2>  <ul>
+<li>
+<h4 id="classical-elegance">Classical Elegance</h4>
+<p>Bach, Vivaldi, Mozart, Pachelbel, Debussy, and more</p>
+</li>
+<li>
+<h4 id="cinematic--contemporary">Cinematic &#x26; Contemporary</h4>
+<p>Themes from Game of Thrones, Lord of the Rings, Harry Potter, and popular film scores.</p>
+</li>
+<li>
+<h4 id="video-game-soundtracks">Video Game Soundtracks</h4>
+<p>Beloved titles like The Legend of Zelda, Final Fantasy, Mario, Halo, and Skyrim</p>
+</li>
+</ul>
+<p>We can design your event’s music to be entirely classical, entirely modern, or an artful mix of both. Either way, we ensure the musical pieces you select, or leave to us to plan for you, perfectly matches your audience and occasion.</p>  </section><section> <!-- <img src="/img/tq.svg" alt="Triforce Quartet logo" class="section-icon"/> --> <h2 tabindex="-1">Let’s Create an Experience Worth Talking About</h2>  <p>From grand entrances to ambient background music, Triforce Quartet elevates every moment of your event with live performance that feels effortless and unforgettable.</p>
+<p><button class="contact-button" data-contact-dialog="">Contact Us</button></p>
+<p><small>Media Kit &#x26; Tech Requirements: Available upon request</small></p>  </section> </main> <footer> <p>Copyright &copy; 2026 Triforce Quartet</p> <p>Site by <a href="#">Chris Rooke</a></p> </footer> <dialog id="contact-dialog"> <button id="contact_close">Close
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg> </button> <h2>Contact TQ</h2> <form action="https://formsubmit.co/triforcequartet@gmail.com" method="POST"> <label for="contact_name">Name <small>(required)</small></label> <input id="contact_name" type="text" name="name" required> <label for="contact_email">Email <small>(required)</small></label> <input type="email" name="email" required> <label for="event_type">Event type:</label> <select name="event_type" id="event_type"> <option value="none" disabled selected>Choose an event type </option> <option value="convention">Convention</option> <option value="corporate">Corporate</option> <option value="school">School</option> <option value="wedding">Wedding</option> <option value="other-event">Other (Please detail below)</option> </select> <label for="contact_message">Contact Message:</label> <input type="text" name="_honey" style="display:none"> <textarea id="contact_message" rows="6" name="contact_message"></textarea> <button type="submit" class="cta">Send</button> </form> </dialog> <script src="/scripts/dialog.js" type="module"></script> </body></html>
