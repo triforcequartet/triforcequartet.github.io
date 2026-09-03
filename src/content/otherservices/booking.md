@@ -4,7 +4,7 @@ page: "otherservices"
 section: 3
 ---
 
-Let’s level up together and craft something that’s one-of-a-kind. We welcome you to reach out with your own unique ideas, event requests, or vision for how our quartet could musically be part of a moment you are creating. We can talk through details together and score a memorable musical experience for you.
+Have something specific in mind? Reach out with your idea, your event, or the moment you're building, and we'll talk through the details and put together the right music for it.
 
 <button class="contact-button" data-contact-dialog>Contact Us</button>
 
