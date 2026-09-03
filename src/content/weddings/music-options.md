@@ -15,8 +15,7 @@ section: 2
 - 
     #### First Dances & Special Moments
     
-    Romantic game themes, classical pieces, or
-a mix
+    Romantic game themes, classical pieces, or a mix
 - 
     #### Reception Set
     

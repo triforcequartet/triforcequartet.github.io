@@ -14,4 +14,3 @@ Triforce Quartet has performed at major conventions and venues including:
 - **Video Games Live (guest appearances)**
 - **Plus countless local shows and fan events**
 
-We’ve also been featured on **IGN**, **Polygon**, and **Kotaku**, and our recordings have racked up millions of plays on Spotify and other streaming services from fans around the world.
