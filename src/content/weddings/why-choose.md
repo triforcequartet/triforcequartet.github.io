@@ -5,27 +5,27 @@ section: 3
 ---
 
 - 
-    ### Versatile Repertoire: Classical to Console
+    ### Versatile Repertoire: Classical and Video Game Music, plus everything in between!
     
-    While we’re best known for our video game arrangements, we are also classically trained professional musicians with a deep love and respect for traditional wedding music. Whether you want Pachelbel’s Canon or Zelda’s Lullaby, Ave Maria or Aerith’s Theme, we can tailor our set to reflect your vision be it timeless, modern, geeky, or a blend of all three.
+    We are best known for our video game arrangements, but every member is a classically trained professional musician, and we play the traditional wedding repertoire with the same care. Pachelbel's Canon or Zelda's Lullaby, Ave Maria or FFVII: Aerith's Theme: we build the set around what you actually want, whether that is timeless, modern, a little nerdy, or a mix of all three.
 
-    Music can help guide each chapter of your day. A tender melody as you walk down the aisle. A joyful tune as you exit as newlyweds. Gentle, romantic background music for cocktails and dinner. A special nod to your love as a couple for a first dance. Triforce Quartet can help thread all the day’s transitions to sync each moment with scored intention.
+    Music carries each part of the day. We can play as you walk down the aisle, as you leave as newlyweds, through cocktail hour and dinner, and for your first dance. Tell us which moments matter most and we will score them to fit.
 
 - 
     ### Experience Brought to Your Wedding Day
     
-    Because of our extensive experience at all different kinds of weddings, we have a good understanding of the vital elements to make sure your day is well orchestrated and stress-free. We work closely with wedding planners, photographers, videographers, and venue staff to ensure the logistics and flow are coordinated and maximize you and your guests’ experience.
+    We have played a lot of weddings, so we know the details that keep a day running smoothly. We coordinate directly with your planner, photographer, videographer, and venue staff, so the timing and logistics are handled and you are not managing the music on your wedding day.
 
-    Music has a unique ability to connect people through a shared experience. It evokes emotion, harps on our nostalgic heart strings, and colors in the collective atmosphere with richness and warmth. We work with you to choose the perfect music for every moment. You can go full-classical, full-nerd, or somewhere in between. We’ll make sure it’s beautiful, seamless, and true to you.
+    We will help you choose the music for each moment, and you set the tone. Go fully traditional, lean into video game music scores, or land somewhere in between. Either way, it will sound polished, and it will sound like you.
 
 - 
     ### Cocktail Hour & Reception Entertainment
     
-    Cocktail hour can be a great time to add ambiance and charm to your post-ceremony events with an assembled mix of elegant background music. With our music variety, guests will recognize beloved classical pieces, cinematic themes, current hits, and (if you wish) subtle nods to the melodies from games that defined your childhood.
+    Cocktail hour is a natural fit for live background music. Depending on what you pick, guests will hear familiar classical pieces, cinematic themes, current hits, and, if you want them, the game melodies people grew up on. We even have an optional PA system we can bring with us! 
 
-    Many people choose to “press stop” on our music playing after cocktail hour. Should you desire us to stay and extend our entertainment to your reception, we would be happy to do so. You have the freedom and flexibility to choose a package that fits your needs, budget, and vision.
+    Plenty of couples wrap our set after cocktail hour. If you would like us to carry on into the reception, we are glad to. You choose the package that fits your day, your budget, and your vision.
 
 - 
     ### Professional and Travel-Ready
     
-    We’ve performed at weddings of all sizes in a variety of settings and we’re happy to coordinate travel, tech, and timing to fit your needs. You can always reach out to us at [link to contact page or contact email] to discuss your unique vision for your day. We welcome you to reach out with questions and set up a consultation to see if we are a good fit for what you are looking for for your special day.
+    Based in the Washington, D.C. area (Fairfax VA), we have played weddings of every size, indoors and out, and we will sort out travel, tech, and timing to match your plans. If you are considering live music for your wedding, reach out at [link to contact page or contact email] to tell us about your day and set up a consultation. No pressure, just a chance to see whether we are the right fit for what you have in mind.

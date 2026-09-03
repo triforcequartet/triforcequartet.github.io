@@ -32,6 +32,6 @@ tracklist:
   - title: "Bravely Default: Serpent that Devours the Horizon (Serpent Eating the Ground)"
     duration: "06:30"
 bandcamp: "https://triforcequartet.bandcamp.com/album/dangerous-to-go-alone-2"
-spotify: ""
-applemusic: ""
+spotify: "https://open.spotify.com/album/72FEWHGg1nI6zYeIXZ2CGw"
+applemusic: "https://music.apple.com/us/album/dangerous-to-go-alone/1823030425"
 ---

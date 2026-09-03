@@ -13,14 +13,16 @@ Our repertoire includes music from:
 - Kingdom Hearts
 - Undertale
 - Chrono Trigger
-- Stardew Valley
+- Hollow Knight
 - Pokémon
-- Skyrim
-- Super Mario
-- and more
+- Super Smash Bros
+- Mario Kart
+- Super Mario Bros
+- Sonic
+- and much more
 
 Whether you’re a gamer, a romantic, or both we’ll help create a soundtrack that your guests will never forget. 
 
-<button class="contact-button" data-contact-dialog>Contact Us</button>
+<button class="contact-button" data-contact-dialog>Check Availability</button>
 
 <small>Audio Samples & Wedding Packages Available Upon Request</small>

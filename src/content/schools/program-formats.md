@@ -7,16 +7,12 @@ section: 2
 - 
     #### Concert Performances
     
-    High-energy shows mixing classical and game music
-- 
-    #### Interactive Demonstrations
-    
-    Learn how instruments work and how music is arranged
+    High-energy shows game music
 - 
     #### Workshops & Masterclasses
     
-    For student musicians interested in technique, ensemble playing, or arranging
+    For student musicians interested in technique and ensemble playing
 - 
-    #### Music & Storytelling Programs
+    #### Worldbuilding with Music
     
-    Combining performance with engaging narratives to show the role music plays in media
+    We explore how music shapes emotional experiences in games, listening to VGM themes and discussing (or guessing!) where they might fit within a game's narrative or environment

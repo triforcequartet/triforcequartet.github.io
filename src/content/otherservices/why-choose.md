@@ -7,7 +7,7 @@ section: 1
 - 
     ### Flexible Repertoire
     
-    We can craft a playlist that’s entirely classical, entirely pop culture, or a creative blend of both.
+    While we specialize in video game music, we can craft a playlist that also includes classical, Pop, Rock, Broadway, and more!
 - 
     ### Creative Collaboration
     
@@ -15,8 +15,8 @@ section: 1
 - 
     ### Any Location
     
-    From large outdoor venues to intimate living rooms, we’ve adapted our performances to fit nearly every kind of space.
+    From large outdoor venues to intimate living rooms, we have acoustic instruments and a PA set up which gives us the flexibility to fit nearly every kind of space.
 - 
     ### Professional and Prepared
     
-    You’ll get the same level of polish and attention to detail we bring to corporate events, conventions, and weddings—no matter how small or unusual the booking.
+    You’ll get the same level of polish and attention to detail we bring to all events whether that's corporate events, conventions, weddings, summer camps, schools, etc. 

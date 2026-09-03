@@ -4,7 +4,7 @@ page: "schools"
 section: 6
 ---
 
-Whether your goal is to inspire future musicians, give your campers or students an unforgettable performance, or simply share the joy of live music, Triforce Quartet can work with you to design a speciality program for your group.
+Tell us what you're after, whether that's sparking interest in future musicians, giving your students a performance they'll remember, or simply bringing live music into the day, and we'll build a program around your group.
 
 <button class="contact-button" data-contact-dialog>Contact Us</button>
 

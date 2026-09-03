@@ -1,6 +1,6 @@
 ---
 title: "ColossalCon East"
-date: "2025-09-04"
+date: "2026-09-11"
 location: "Kalahari Resorts Pocono Manor, PA"
 type: "event"
 private: false

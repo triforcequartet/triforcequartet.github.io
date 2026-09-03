@@ -7,12 +7,12 @@ section: 1
 - 
     ### Engaging & Accessible
 
-    We speak the musical language students know and love. By pairing familiar tunes from The Legend of Zelda, Final Fantasy, Mario, and more with timeless classical works, we show how music connects across generations and styles. We help showcase the musical pieces behind the inspiration for known medleys, boss battles, TV, and movies.
+    Students already know this music, which makes it a great way in. We pair themes they recognize from The Legend of Zelda, Final Fantasy, and Mario and tie it in with the classical works those composers drew on, so a familiar tune becomes a doorway into how music is built and why it lasts. The games kids love turn into a way to talk about the writing behind them.
 - 
     ### Educational Without Feeling Like Homework
 
-    Our programs can cover music history, composition, and the art of live performance woven into stories, demonstrations, and Q&A sessions that keep kids interested and involved. We use hands-on learning to explore how music can impact how people feel as they journey through a video game or movie. Triforce Quartet members bring in their own experiences as professional performers and college-educated musicians to illuminate the power of playing string instruments. We strive to provide a workshop that balances the technical pieces of music playing with the artful and personal ones.
+    Our programs can cover music and live performance through stories, demonstrations, and Q&As. We show how a score shapes the way a game level or a scene feels, and we draw on our own experience as working professional musicians with formal training to talk honestly about what playing a string instrument really takes, both the technical side and the personal side.
 - 
     ### Flexible for All Ages & Skill Levels
 
-    We tailor content for your audience including elementary students experiencing a string quartet for the first time, middle and high school musicians looking for inspiration, or campers exploring the performing arts. Our goal is to bring in elements of energy, inspiration, and laughter so every young learner comes away with having learned something new.
+    We adjust the program for the room: elementary students meeting a string quartet for the first time, middle and high school players looking for something to aim toward, or campers trying the performing arts for the first time. The goal stays the same, an engaging time with real energy that gets a few laughs and sends everyone home having learned something.
