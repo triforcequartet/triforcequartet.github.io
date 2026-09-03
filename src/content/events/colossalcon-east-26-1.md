@@ -6,3 +6,4 @@ type: "event"
 private: false
 tickets: "https://colossalcon.com/"
 ---
+Formal Ball: Events 2. 8pm

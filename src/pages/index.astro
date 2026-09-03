@@ -115,8 +115,8 @@ const eventsWithContent = await Promise.all(
       .map((event) => (
       <article class={`event-card${event.data.private ? ' event-private' : ''}`}>
         <time class="event-date">
-          <span class="event-date-number">{(event.data.date.getDate())}</span>
-          <span class="event-date-month">{(event.data.date.toLocaleString('default', { month: 'short' }))}</span>
+          <span class="event-date-number">{(event.data.date.getUTCDate())}</span>
+          <span class="event-date-month">{(event.data.date.toLocaleString('default', { month: 'short', timeZone: 'UTC' }))}</span>
         </time>
         <div class="event-details">
           <h3 class="event-title">{event.data.title}</h2>

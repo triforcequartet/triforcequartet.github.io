@@ -6,3 +6,4 @@ type: "event"
 private: false
 tickets: "https://burg.quest/"
 ---
+Main Show: 3pm
