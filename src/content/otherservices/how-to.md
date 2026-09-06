@@ -1,5 +1,5 @@
 ---
-title: "How to Book a Custom Performance"
+title: "How It Works"
 page: "otherservices"
 section: 2
 ---
@@ -9,10 +9,10 @@ section: 2
     
     Share your vision, date, and location.
 - 
-    #### Collaborate on Details
+    #### Plan the Details Together
     
     We’ll discuss music choices, timing, and any special touches.
 - 
     #### Enjoy the Show
     
-    Sit back and let us bring your idea to life.
+    On the day, sit back while we handle the rest.

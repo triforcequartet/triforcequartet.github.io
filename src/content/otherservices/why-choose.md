@@ -7,7 +7,7 @@ section: 1
 - 
     ### Flexible Repertoire
     
-    While we specialize in video game music, we can craft a playlist that also includes classical, Pop, Rock, Broadway, and more!
+    While we specialize in video game music, we can craft a playlist that also includes any genre! Classical, Pop, Rock, Broadway, and more!
 - 
     ### Creative Collaboration
     
