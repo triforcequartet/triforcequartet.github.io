@@ -4,6 +4,7 @@ page: "weddings"
 section: 1
 ---
 
-Wedding planning involves a lot of decisions, and keeping everyone aligned on them is not always easy. We want the music to be one of the parts that feels straightforward. Because we perform music across a range of genres, including classical, pop, rock, Broadway, and video game music, you can shape a soundtrack that fits you as a couple rather than picking from a short standard list. The right music also does real work on the day: it smooths the transitions and helps your guests feel connected to the two of you.
+Wedding planning involves a lot of decisions, and keeping everyone aligned isn't always easy. We want the music to be one of the parts that feels straightforward. Because we perform across a range of genres, including classical, pop, rock, broadway, and (of course) video game music, you can shape a set that fits you as a couple instead of picking from a short standard list.
 
-A classic ceremony, a set built around the games that mean something to you, or a blend of the two: Triforce Quartet builds the soundtrack around your wedding, not a template.
+
+Not sure what to choose? We have a 'wedding worksheet' to help you organize your thoughts, and we'll talk through the tougher calls with you.

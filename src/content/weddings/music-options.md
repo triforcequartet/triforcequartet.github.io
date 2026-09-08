@@ -7,15 +7,15 @@ section: 2
 - 
     #### Ceremony Music
     
-    Processional, recessional, unity ceremony
+    Processional, recessional, any mid-ceremony interludes
 - 
     #### Cocktail Hour & Dinner
     
-    Background music with personality
+    Background music that your guests love
 - 
     #### First Dances & Special Moments
     
-    Romantic game themes, classical pieces, or a mix
+    Romantic game themes, classical pieces, or anything else you desire
 - 
     #### Reception Set
     

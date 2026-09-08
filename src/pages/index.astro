@@ -39,7 +39,7 @@ const eventsWithContent = await Promise.all(
       Video Game Music<br />
       From a String Quartet</span>
     </h2>
-    <p>Classically trained musicians specializing in video game music performances: conventions, weddings, schools, events, and anything else!</p>
+    <p>Classically trained musicians specializing in video game music recordings and performances! Conventions, weddings, schools, events, and anything else!</p>
     <button class="cta" data-contact-dialog>Check Availability</button>
     <a href="#music">Discover the new album</a>
   </section>
@@ -115,6 +115,9 @@ const eventsWithContent = await Promise.all(
       .map((event) => (
       <article class={`event-card${event.data.private ? ' event-private' : ''}`}>
         <time class="event-date">
+          {/* Event dates are stored as UTC-midnight strings; using UTC here (instead of
+              the machine's local timezone) keeps the displayed day from shifting by one
+              depending on where/when the site is built or previewed. */}
           <span class="event-date-number">{(event.data.date.getUTCDate())}</span>
           <span class="event-date-month">{(event.data.date.toLocaleString('default', { month: 'short', timeZone: 'UTC' }))}</span>
         </time>
@@ -134,9 +137,9 @@ const eventsWithContent = await Promise.all(
     </ul>
   </Section> 
   <Section title="About" id="about">
-    <p>Triforce Quartet is a string quartet that plays video game music: classically trained players performing VGM, arranged for gamers and non-gamers. Since forming in 2012, the group has released five full-length studio albums, drawn over 25 million streams on Spotify, played over 200 live shows, and earned two 2024 Wammie Award nominations, for Best Classical Artist/Group and Best Classical Song.</p>
-    <p>The Triforce Quartet began innocently as a short Zelda medley for an encore of a recital in early 2007, but the video of using traditional string quartet instruments to play music of classic games gained viral popularity later that summer. Thanks to this, cellist Chad Schwartz was able to combine his love for video games, along with years of classical training, to arrange a variety of video game themes that even non-gamers can enjoy. The four members of the Triforce Quartet take audience members on an unforgettable musical journey.</p>
-    <p>The Triforce Quartet has played in front of sold out shows like PAX Prime in Seattle, MAGFest in Washington DC, Dragon Con in Atlanta, ColossalCon in Ohio, the iDIG Music Festival in Ireland, and shared the stage with Video Games Live!</p>
+    <p>Triforce Quartet is a classically trained string quartet that specializes in playing video game music. Since forming in 2012, the group has released five full-length studio albums, drawn over 25 million streams on Spotify, and played over 200 live shows! They also earned two 2024 Wammie Award nominations for Best Classical Artist/Group and Best Classical Song (Super Smash Bros Ultimate - Main Theme).</p>
+    <p>The Triforce Quartet began innocently as a short Zelda medley for an encore of a recital in early 2007, but the video of using traditional string quartet instruments to play VGM gained viral popularity later that summer. Thanks to this, cellist Chad Schwartz was able to combine his love for video games, along with years of classical training, to arrange a variety of video game themes that even non-gamers can enjoy. The four members of the Triforce Quartet take audience members on an unforgettable musical journey.</p>
+    <p>The Triforce Quartet has played in front of sold out shows like PAX West in Seattle, MAGFest in Washington DC, Dragon Con in Atlanta, ColossalCon in Ohio, the iDIG Music Festival in Ireland, and shared the stage with Video Games Live!</p>
     <ul class="bios">
     {biosWithContent.map((bio) => (
       <article class='bio-card'>

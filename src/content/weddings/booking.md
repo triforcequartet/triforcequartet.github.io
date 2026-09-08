@@ -4,7 +4,7 @@ page: "weddings"
 section: 4
 ---
 
-Whether you’re a gamer, a romantic, or both we’ll help create a soundtrack that will be memorable for you personally and that your guests will connect with. You can always <a class="contact-link" data-contact-dialog>reach out to us</a> to discuss your unique musical musical vision for your day.
+Whether you’re a gamer, a romantic, or both we’ll help create a set list that will be memorable for you personally and that your guests will connect with. You can always <a class="contact-link" data-contact-dialog>reach out to us</a> to discuss your unique musical musical vision for your day.
 
 Our repertoire includes music from:
 
@@ -21,8 +21,8 @@ Our repertoire includes music from:
 - Sonic
 - and much more
 
-Whether you’re a gamer, a romantic, or both we’ll help create a soundtrack that your guests will never forget. 
+Whether you’re a gamer, a romantic, or both we’ll help create a playlist that your guests will never forget. 
 
 <button class="contact-button" data-contact-dialog>Check Availability</button>
 
-<small>Audio Samples & Wedding Packages Available Upon Request</small>
+<small>Audio/Video Samples & Wedding Packages Available Upon Request</small>

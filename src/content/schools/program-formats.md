@@ -7,7 +7,7 @@ section: 2
 - 
     #### Concert Performances
     
-    High-energy shows game music
+    Perform a show for your students and/or guests
 - 
     #### Workshops & Masterclasses
     
