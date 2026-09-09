@@ -951,6 +951,72 @@ h2::before {
 }
 
 
+/* VIDEOS */
+
+.video-grid {
+    grid-column: 1 / -1;
+    /* Half the available width; height follows automatically since each video's
+       16:9 box (see .video-media) scales with its width. */
+    max-width: 50%;
+    display: grid;
+    /* auto-fit means new videos added to featuredVideos in index.astro just flow into
+       the grid (wrapping into more rows/columns as needed) with no CSS changes. */
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: var(--gap);
+    margin-top: 1rem;
+}
+
+/* Shared by both the click-to-play button and the iframe that replaces it, so the
+   video keeps the same responsive 16:9 box (no black bars, no overflow) either way. */
+.video-media {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background-color: black;
+}
+
+.video-thumb {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-icon::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-play-icon::after {
+    /* CSS-triangle play arrow, nudged right with margin so it looks centered
+       (a triangle's visual weight sits left of its true center) */
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: .75rem 0 .75rem 1.25rem;
+    border-color: transparent transparent transparent white;
+    margin-left: .25rem;
+}
+
 
 /* Services */
 

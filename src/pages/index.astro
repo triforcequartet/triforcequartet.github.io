@@ -25,6 +25,16 @@ const eventsWithContent = await Promise.all(
 );
 
 
+// Videos shown in the "See us perform" section below the hero. Add more objects here
+// later to show more videos — the grid and click-to-play behavior already support any
+// number of entries without further changes.
+const featuredVideos = [
+  {
+    id: "z_qeCAsMlPI", // youtube.com/watch?v=z_qeCAsMlPI
+    title: "See our entire live set from MAGFest 2026",
+  },
+];
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -42,6 +52,20 @@ const eventsWithContent = await Promise.all(
     <p>Classically trained musicians specializing in video game music recordings and performances! Conventions, weddings, schools, events, and anything else!</p>
     <button class="cta" data-contact-dialog>Check Availability</button>
   </section>
+  <Section title="See our entire live set from MAGFest 2026" id="videos">
+    {/* Click-to-play: shows a thumbnail + play button until clicked, so nothing loads
+        or autoplays until a visitor actually asks for it. */}
+    <ul class="video-grid">
+      {featuredVideos.map((video) => (
+        <li class="video-card" data-video-id={video.id}>
+          <button type="button" class="video-media video-thumb" aria-label={`Play video: ${video.title}`}>
+            <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" loading="lazy" />
+            <span class="video-play-icon" aria-hidden="true"></span>
+          </button>
+        </li>
+      ))}
+    </ul>
+  </Section>
 	<!-- <Welcome /> -->
   <Section title="Music" id="music">
     <ul class="albums">
@@ -181,4 +205,24 @@ const eventsWithContent = await Promise.all(
 ))}
 </ul> -->
 
+  <script>
+    // Replace a clicked video's thumbnail button with a real YouTube embed, so the
+    // video only loads and plays once someone actually clicks it (no autoplay on
+    // page load, no background video).
+    document.querySelectorAll('.video-thumb').forEach((button) => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.video-card');
+        const videoId = card?.getAttribute('data-video-id');
+        if (!videoId) return;
+
+        const iframe = document.createElement('iframe');
+        iframe.className = 'video-media';
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.title = button.getAttribute('aria-label') ?? 'YouTube video player';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        button.replaceWith(iframe);
+      });
+    });
+  </script>
 </Layout>
