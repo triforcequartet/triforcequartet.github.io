@@ -1059,6 +1059,28 @@ h2::before {
     margin-top: 0;
 }
 
+/* Convention logo row: white background keeps mixed logo backgrounds (transparent,
+   black, purple, etc.) looking consistent. Logos shrink together to always stay in
+   one row instead of wrapping to a new line on narrow screens. */
+.convention-logos {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: clamp(.25rem, 2vw, var(--gap));
+    margin-top: 1rem;
+}
+
+.convention-logos img {
+    flex: 1 1 0;
+    min-width: 0;
+    height: clamp(3rem, 10vw, 8rem);
+    width: auto;
+    max-width: 20rem;
+    object-fit: contain;
+    background-color: white;
+    padding: .5rem .75rem;
+}
+
 .contact-button, dialog form button {
     border: 0;
     font-size: 1.125rem;
