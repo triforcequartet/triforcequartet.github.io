@@ -955,15 +955,22 @@ h2::before {
 
 .video-grid {
     grid-column: 1 / -1;
-    /* Half the available width; height follows automatically since each video's
-       16:9 box (see .video-media) scales with its width. */
-    max-width: 50%;
+    /* Full width on narrow/mobile screens (shrinking it further would make the video
+       and its play button uncomfortably small to tap); half width from the site's
+       usual tablet/desktop breakpoint up, since there's more room to spare there. */
+    max-width: 100%;
     display: grid;
     /* auto-fit means new videos added to featuredVideos in index.astro just flow into
        the grid (wrapping into more rows/columns as needed) with no CSS changes. */
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: var(--gap);
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+    .video-grid {
+        max-width: 50%;
+    }
 }
 
 /* Shared by both the click-to-play button and the iframe that replaces it, so the
