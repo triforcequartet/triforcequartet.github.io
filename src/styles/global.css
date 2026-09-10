@@ -934,6 +934,24 @@ h2::before {
         margin-top: 2rem;
     }
 }
+
+/* Standalone tagline below the subheadline: smaller and bolder than the subheadline
+   text, in the site's green accent color, with extra space above so it reads as its
+   own statement rather than a continuation of that paragraph. */
+#hero .hero-tagline {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+    color: #0e5135;
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+    #hero .hero-tagline {
+        margin-top: 2.5rem;
+    }
+}
+
 #hero a, #hero button {
     grid-column: 1 / -1;
     justify-self: center;
